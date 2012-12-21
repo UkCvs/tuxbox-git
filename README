@@ -1,0 +1,31 @@
+To get the tuxbox sources you can use the following commands:
+
+
+default via git:
+
+REPLIST="apps boot cdk driver hostapps sandbox"
+for f in  $REPLIST ; do
+	git clone git://git.code.sf.net/p/tuxbox-cvs/$f $f
+done
+
+or http:
+
+REPLIST="apps boot cdk driver hostapps sandbox"
+for f in  $REPLIST ; do
+	git clone http://git.code.sf.net/p/tuxbox-cvs/$f $f
+done
+
+	
+
+Developers:
+
+REPLIST="apps boot cdk driver hostapps sandbox"
+for f in  $REPLIST ; do
+	git clone ssh://[user_name]@git.code.sf.net/p/tuxbox-cvs/$f $f
+done
+
+
+More infos at http://wiki.tuxbox.org/wiki/Tuxbox_Entwicklungsumgebung#Auschecken
+
+mailinglist: tuxbox-cvs-global@lists.sourceforge.net
+forum: http://forum.tuxbox.org/forum
