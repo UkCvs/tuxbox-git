@@ -25,7 +25,10 @@ for f in  $REPLIST ; do
 done
 
 
-More infos at http://wiki.tuxbox.org/wiki/Tuxbox_Entwicklungsumgebung#Auschecken
+subscribable lists:
+mailinglist: 	tuxbox-cvs-global@lists.sourceforge.net
+code changes: 	tuxbox-cvs-commits@lists.sourceforge.net
 
-mailinglist: tuxbox-cvs-global@lists.sourceforge.net
-forum: http://forum.tuxbox.org/forum
+More infos at:
+wiki:		http://wiki.tuxbox.org/wiki/Tuxbox_Entwicklungsumgebung#Auschecken
+forum: 		http://forum.tuxbox.org/forum
