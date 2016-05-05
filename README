@@ -1,34 +1,14 @@
-To get the tuxbox sources you can use the following commands:
+To get the UkCvs tuxbox sources you can use the following commands:
 
+TUXBOX_BRANCH="ukcvs"
 
-default via git:
+REPOLIST="boot driver hostapps cdk apps"
 
-REPLIST="apps boot cdk driver hostapps sandbox"
-for f in  $REPLIST ; do
-	git clone git://git.code.sf.net/p/tuxbox-cvs/$f $f
+for repo in $REPOLIST; do
+	git clone -b $TUXBOX_BRANCH git://github.com/UkCvs/tuxbox-git-$repo.git $repo
 done
-
-or http:
-
-REPLIST="apps boot cdk driver hostapps sandbox"
-for f in  $REPLIST ; do
-	git clone http://git.code.sf.net/p/tuxbox-cvs/$f $f
-done
-
-	
-
-Developers:
-
-REPLIST="apps boot cdk driver hostapps sandbox"
-for f in  $REPLIST ; do
-	git clone ssh://[user_name]@git.code.sf.net/p/tuxbox-cvs/$f $f
-done
-
-
-subscribable lists:
-mailinglist: 	tuxbox-cvs-global@lists.sourceforge.net
-code changes: 	tuxbox-cvs-commits@lists.sourceforge.net
 
 More infos at:
-wiki:		http://wiki.tuxbox.org/wiki/Tuxbox_Entwicklungsumgebung#Auschecken
+wiki:		http://wiki.tuxbox.org/wiki
 forum: 		http://forum.tuxbox.org/forum
+		http://ukcvs.net
